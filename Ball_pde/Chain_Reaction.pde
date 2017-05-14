@@ -1,10 +1,11 @@
 class Chain_Reaction {
 
   Ball[] balls;
+  boolean reactionStarted;
 
   void setup() {
     size(600, 600);
-    reactionStarted = false; //brrrrrrat
+    reactionStarted = false; 
     balls = new Ball[25];
     for (int i=0; i < balls.length; i++)
       balls[i] = new Ball();
