@@ -20,15 +20,6 @@ class Ball {
     state = 1;
   }
 
-  void setup() {
-    size(600, 600);
-  }
-
-  void draw() {
-    background(0);  
-    move();
-  }
-
   void move() {
     x = x + dx;
     y = y + dy;

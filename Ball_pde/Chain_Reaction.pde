@@ -4,7 +4,7 @@ class Chain_Reaction {
 
   void setup() {
     size(600, 600);
-    reactionStarted = false; //brrrrrrat
+    boolean reactionStarted = false; //brrrrrrat
     balls = new Ball[25];
     for (int i=0; i < balls.length; i++)
       balls[i] = new Ball();
@@ -18,7 +18,7 @@ class Chain_Reaction {
   }
 
   void mouseClicked() {
-    if (! reactionStarted ) {
+    if (!reactionStarted) {
       balls[0].x = mouseX;
     }
   }
