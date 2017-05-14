@@ -1,9 +1,10 @@
-class Chain_Reaction {
+class Chain_Reaction implements Ball{
+  
   Ball[] balls;
 
   void setup() {
     size(600,600);
-    reactionStarted = false; //brrrrrrat
+    boolean reactionStarted = false; //brrrrrrat
     balls = new Ball[25];
     for (int i=0; i < balls.length; i++)
       balls[i] = new Ball();
