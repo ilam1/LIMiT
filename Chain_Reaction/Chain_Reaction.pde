@@ -17,9 +17,15 @@ void draw() {
   }
 }
 
+boolean collision (Ball ba) {
+  return dist(ba.x, ba.y, this.x, this.y) <= (ba.rad + this.rad)
+}
+
 void mouseClicked() {
   if (! reactionStarted ) {
     balls[0].x = mouseX;
-    balls[0].y = mouseY;
   }
+  else {
+    if (balls[0].collision() //Needs a parameter
+      
 }
