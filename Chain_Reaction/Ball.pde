@@ -13,7 +13,7 @@ class Ball {
     float b = random(256);
     x = random((width - rad) + rad/2);
     y = random((height - rad) + rad/2);
-    rad = 5;
+    rad = 10;
     c = color(r, g, b);
     dx = random(10) - 2;
     dy = random(10) - 3;
@@ -32,16 +32,18 @@ class Ball {
   void move() {
     x = x + dx;
     y = y + dy;
+    bounce();
   }
 
   void display() {
     ellipse( x, y, rad, rad );
+    fill(c);
   }
 
   void bounce() {
-    if (y >= height)
+    if (y > height || y < 0)
       dy = -dy;
-    if (x >= width)
+    if (x > width || x < 0)
       dx = -dx;
   }
 }
