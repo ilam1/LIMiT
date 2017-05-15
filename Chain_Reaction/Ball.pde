@@ -32,7 +32,6 @@ class Ball {
   void move() {
     x = x + dx;
     y = y + dy;
-    bounce();
   }
 
   void display() {
